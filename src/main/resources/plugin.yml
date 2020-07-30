@@ -1,0 +1,41 @@
+name: Essential
+version: ${project.version}
+main: vitogd.me.essential.Essential
+# api-version: 1.15
+authors: [vitogd]
+description: Um plugin de Minecraft com os comandos essenciais para o seu servidor!
+website: https://github.com/vitogd/Essential
+
+commands:
+  fly:
+    description: 'Enable the ability of fly'
+    usage: '/fly'
+  gm:
+    description: 'Change gamemode quickly'
+    usage: '/gm (0, 1 or 2)'
+  cc:
+    description: 'Clear the chat'
+    usage: '/cc'
+  warp:
+    description: 'Teleport the player to a provided warp'
+    usage: '/warp (home_name)'
+  setwarp:
+    description: 'Create a new warp at the player location'
+    usage: '/setwarp (home_name)'
+  delwarp:
+    descrition: 'Delete warps that you created before'
+    usage: '/delwarp (home_name)'
+
+permissions:
+  essentials.fly:
+    description: 'Gives acess to use fly'
+  essentials.gm:
+    description: 'Gives acess to use gamemode command'
+  essentials.cc:
+    description: 'Gives acess to use clear chat command'
+  essentials.warp:
+    essentials.warp.*:
+      description: 'Gives acess to use all warp commands'
+    essential.warp.setwarp:
+      description: 'Give acess to set warps'
+    essential.warp.warp:

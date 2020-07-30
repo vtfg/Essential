@@ -1,0 +1,29 @@
+console_message: '&8[&c*&8] &cYou are unable to execute this command!'
+
+# No permission message
+no_perm_message: '&cYou do not have permission to execute this command!'
+
+#FlyCommand
+FlyCommand:
+  flying_enabled: '&8[&a*&8] &7You have &aenabled fly!'
+  flying_disabled: '&8[&a*&8] &7You have &cdisabled fly!'
+
+#Gamemode
+Gamemode:
+  no_args_message: '&8[&a*&8] &cYou need to pass a gamemode, like /gm (0, 1 or 2)!'
+  already_gamemode: '&8[&a*&8] &cYou are already in this gamemode!'
+  gamemode_not_found: '&8[&a*&8] &cGamemode not found, try again!'
+  gamemode_survival: '&8[&a*&8] &7You have changed to gamemode &aSURVIVAL!'
+  gamemode_creative: '&8[&a*&8] &7You have changed to gamemode &aCREATIVE!'
+  gamemode_adventure: '&8[&a*&8] &7You have changed to gamemode &aADVENTURE!'
+
+#ClearChat
+ClearChat:
+  chat_cleared: '&8[&a*&8] &7You have &acleared the chat!'
+
+#Warp
+Warp:
+  provide_warp_name: '&8[&a*&8] &cYou need to provide a warp name!'
+  no_warp_name: '&8[&a*&8] &cNo warp with that name!'
+  warp_name_exists: '&8[&a*&8] &cThere is already a warp with this name!'
+  warp_set: '&8[&a*&8] &7You have &asetted the warp!'
