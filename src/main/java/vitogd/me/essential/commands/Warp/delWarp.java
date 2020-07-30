@@ -39,13 +39,13 @@ public class delWarp implements CommandExecutor {
         String warp_name = args[0].toLowerCase();
 
         if (plugin.getConfig().get(warp_name) == null) {
-            p.sendMessage(Utils.chat(plugin.getConfig().getString("Warp.no_warp_name")));
+            p.sendMessage(Utils.chat(plugin.getConfig().getString("Warp.no_warp_name").replace("<warpname>", warp_name)));
             return false;
         }
 
         plugin.getConfig().set(warp_name, null);
         plugin.saveConfig();
-        p.sendMessage(Utils.chat("&8[&a*&8] &7You have &cdeleted &7the warp &c" + warp_name + " &asucessfully!"));
+        p.sendMessage(Utils.chat(plugin.getConfig().getString("Warp.warp_deleted").replace("<warpname", warp_name)));
 
         return true;
     }

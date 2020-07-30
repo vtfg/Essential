@@ -40,7 +40,7 @@ public class setWarp implements CommandExecutor {
         String warp_name = args[0].toLowerCase();
 
         if (plugin.getConfig().get(warp_name) != null) {
-            p.sendMessage(Utils.chat(plugin.getConfig().getString("Warp.warp_name_exists")));
+            p.sendMessage(Utils.chat(plugin.getConfig().getString("Warp.warp_name_exists").replace("<warpname>", warp_name)));
             return false;
         }
 
@@ -53,7 +53,7 @@ public class setWarp implements CommandExecutor {
         plugin.getConfig().set(warp_name + ".Yaw", loc.getYaw());
         plugin.saveConfig();
 
-        p.sendMessage(Utils.chat(plugin.getConfig().getString("Warp.warp_set")));
+        p.sendMessage(Utils.chat(plugin.getConfig().getString("Warp.warp_set").replace("<warpname>", warp_name)));
         return true;
     }
 }

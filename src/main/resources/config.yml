@@ -24,6 +24,8 @@ ClearChat:
 #Warp
 Warp:
   provide_warp_name: '&8[&a*&8] &cYou need to provide a warp name!'
-  no_warp_name: '&8[&a*&8] &cNo warp with that name!'
-  warp_name_exists: '&8[&a*&8] &cThere is already a warp with this name!'
-  warp_set: '&8[&a*&8] &7You have &asetted the warp!'
+  no_warp_name: '&8[&a*&8] &cNo warp with name <warpname>!'
+  warp_name_exists: '&8[&a*&8] &cThere is already a warp with the name <warpname>!'
+  warp_set: '&8[&a*&8] &7You have &asetted the warp <warpname>!'
+  warp_deleted: '&8[&a*&8] &7You have &cdeleted &7the warp &c <warpname> &asucessfully!'
+  warp_teleported: '&8[&a*&8] &7You have &ateleported to &a <warpname>!'
