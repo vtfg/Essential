@@ -1,4 +1,4 @@
-package vitogd.me.essential.commands.Warp;
+package vitogd.me.essential.commands.warp;
 import vitogd.me.essential.Essential;
 import vitogd.me.essential.utils.Utils;
 
@@ -7,11 +7,11 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class delWarp implements CommandExecutor {
+public class DelWarp implements CommandExecutor {
 
     private Essential plugin;
 
-    public delWarp(Essential plugin) {
+    public DelWarp(Essential plugin) {
         this.plugin = plugin;
 
         plugin.getCommand("delwarp").setExecutor(this);

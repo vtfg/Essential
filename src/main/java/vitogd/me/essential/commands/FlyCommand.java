@@ -33,16 +33,12 @@ public class FlyCommand implements CommandExecutor {
                 p.sendMessage(Utils.chat(plugin.getConfig().getString("FlyCommand.flying_disabled")));
                 return true;
             }
-            else {
                 p.setAllowFlight(true);
                 p.setFlying(true);
                 p.sendMessage(Utils.chat(plugin.getConfig().getString("FlyCommand.flying_enabled")));
                 return true;
-            }
-        } else {
-            p.sendMessage(Utils.chat(plugin.getConfig().getString("no_perm_message")));
         }
-
+        p.sendMessage(Utils.chat(plugin.getConfig().getString("no_perm_message")));
         return false;
     }
 }

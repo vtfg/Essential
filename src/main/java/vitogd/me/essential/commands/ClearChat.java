@@ -1,4 +1,5 @@
 package vitogd.me.essential.commands;
+import org.bukkit.Bukkit;
 import vitogd.me.essential.Essential;
 import vitogd.me.essential.utils.Utils;
 
@@ -26,16 +27,13 @@ public class ClearChat implements CommandExecutor {
         Player p = (Player) sender;
 
         if (p.hasPermission("essentials.cc")) {
-            for(int i=0; i < 100; i ++)
-            {
-                p.sendMessage("");
+            for(Player onlinePlayers : Bukkit.getOnlinePlayers()) {
+                p.sendMessage(new String[100]);
+                p.sendMessage(Utils.chat(plugin.getConfig().getString("ClearChat.chat_cleared")));
+                return true;
             }
-            p.sendMessage(Utils.chat(plugin.getConfig().getString("ClearChat.chat_cleared")));
-            return true;
-        } else {
-            p.sendMessage(Utils.chat(plugin.getConfig().getString("no_perm_message")));
         }
-
+        p.sendMessage(Utils.chat(plugin.getConfig().getString("no_perm_message")));
         return false;
     }
 }

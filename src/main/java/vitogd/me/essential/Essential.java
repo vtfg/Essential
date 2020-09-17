@@ -4,9 +4,9 @@ import org.bukkit.plugin.java.JavaPlugin;
 import vitogd.me.essential.commands.ClearChat;
 import vitogd.me.essential.commands.FlyCommand;
 import vitogd.me.essential.commands.Gamemode;
-import vitogd.me.essential.commands.Warp.Warp;
-import vitogd.me.essential.commands.Warp.delWarp;
-import vitogd.me.essential.commands.Warp.setWarp;
+import vitogd.me.essential.commands.warp.Warp;
+import vitogd.me.essential.commands.warp.DelWarp;
+import vitogd.me.essential.commands.warp.SetWarp;
 
 public final class Essential extends JavaPlugin {
 
@@ -20,8 +20,8 @@ public final class Essential extends JavaPlugin {
         new ClearChat(this);
         // Warp
         new Warp(this);
-        new setWarp(this);
-        new delWarp(this);
+        new SetWarp(this);
+        new DelWarp(this);
     }
 
     private void loadConfig() {

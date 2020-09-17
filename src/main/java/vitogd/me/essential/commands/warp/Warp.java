@@ -1,4 +1,4 @@
-package vitogd.me.essential.commands.Warp;
+package vitogd.me.essential.commands.warp;
 import org.bukkit.Bukkit;
 import vitogd.me.essential.Essential;
 import vitogd.me.essential.utils.Utils;

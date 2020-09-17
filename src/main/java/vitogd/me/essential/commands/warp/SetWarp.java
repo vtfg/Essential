@@ -1,4 +1,4 @@
-package vitogd.me.essential.commands.Warp;
+package vitogd.me.essential.commands.warp;
 import vitogd.me.essential.Essential;
 import vitogd.me.essential.utils.Utils;
 
@@ -8,11 +8,11 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.Location;
 
-public class setWarp implements CommandExecutor {
+public class SetWarp implements CommandExecutor {
 
     private Essential plugin;
 
-    public setWarp(Essential plugin) {
+    public SetWarp(Essential plugin) {
         this.plugin = plugin;
 
         plugin.getCommand("setwarp").setExecutor(this);
