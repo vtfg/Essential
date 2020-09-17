@@ -1,35 +1,44 @@
-# Essential ⛏️
 
-## O que é?
+<h1 align="center">
+    Essential
+</h1>
 
-É um plugin de Minecraft para a versão 1.15.2.
+<h4 align="center">
+ A Minecraft plugin with the essential commands for your server!
+</h4>
+<p align="center">
+  <img alt="GitHub" src="https://img.shields.io/github/license/vitogd/Essential.svg">
+</p>
 
-## Por que usar o Essential?
+<p align="center">
+  <a href="#information_source-how-to-use">How To Use</a> 
+  |
+  <a href="#memo-license">License</a>
+</p>
 
-O plugin disponibiliza a você diversos comandos úteis.
+---
 
-<!--
-### Instalação e utilização
-```sh
-???
-```
--->
-### Comandos
+## :information_source: How To Use
 
-| Comando | Nome | Funcionalidade | 
-| ------ | ------ | ------ |
-| /gm (1, 2 ou 3) | Gamemode | Altera entre os modos de jogo |
-| /fly | Voar | Ativa o modo de voo |
-| /cc | Limpar Chat | Limpa todas as mensagens enviadas no chat |
-| /warp (nome) | Teleporte | Permite o jogador se teleportar a um portal criado |
-| /warp set (nome) | Criar Teleporte | Permite o jogador criar um teleporte em uma localização |
-| /warp del (nome) | Deletar Teleporte | Permite o jogador deletar um teleporte criado anteriormente |
+ 1. Download the jar file from [releases](https://github.com/vitogd/Essential/releases/tag/release).
+2. Put the downloaded file on plugin's folder in your server
+3. Start the server
 
-### Desenvolvimento
+##### Be sure if your server is on 1.15.2, if not, will don't work
 
-Quer contribuir? Ótimo, mande sua sugestão no meu Discord **vitogd#4645**.
+## What is the commands?
 
-License
-----
+| Name| Command | Params           | Functionality             |
+| ------ | -------- | ---------------- | ------------------ |
+| Gamemode    | `/gm` | `1, 2 or 3` | Change your gamemode |
+| Fly | `/fly` | Null | Turn on flight mode |
+| Clear Chat | `/cc` | Null | Clear the chat |
+| Warp | `/warp` | `(warp name)` | Teleport to any created Warp |
+| Warp Set | `/warp set` | `(warp name)` | Set a Warp |
+| Warp Delete | `/warp del` | `(warp name)` | Delete a Warp |
 
-MIT © Victor Guedes
+## :memo: License
+
+This project is under the MIT license. See the [LICENSE](https://github.com/vitogd/Essential/blob/master/LICENSE) for more information.
+
+---
