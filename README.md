@@ -31,8 +31,8 @@
 | Name| Command | Params           | Functionality             |
 | ------ | -------- | ---------------- | ------------------ |
 | Gamemode    | `/gm` | `1, 2 or 3` | Change your gamemode |
-| Fly | `/fly` | Null | Turn on flight mode |
-| Clear Chat | `/cc` | Null | Clear the chat |
+| Fly | `/fly` | None | Turn on flight mode |
+| Clear Chat | `/cc` | None | Clear the chat |
 | Warp | `/warp` | `(warp name)` | Teleport to any created Warp |
 | Warp Set | `/warp set` | `(warp name)` | Set a Warp |
 | Warp Delete | `/warp del` | `(warp name)` | Delete a Warp |
